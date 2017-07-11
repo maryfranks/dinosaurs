@@ -46,6 +46,8 @@
 
 8. Rename the five longest dinosaurs The Famous Five.
 
-  This last one still isn't working! 
+  SELECT * FROM dinos ORDER BY length DESC LIMIT 5;
+  UPDATE dinos SET name='The Famous Five' WHERE id=18 OR id=7 OR id=23 OR id=60 OR id=35;
 
-  UPDATE dinos SET name='The Famous Five' WHERE length=(FROM dinos ORDER BY length DESC LIMIT 5);
+
+IF you put a new query in parenthesis in the where that query can ONLY return one result.
